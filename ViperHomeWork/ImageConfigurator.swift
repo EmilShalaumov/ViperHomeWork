@@ -14,8 +14,9 @@ protocol ImageConfiguratorProtocol {
 
 class ImageConfigurator: ImageConfiguratorProtocol {
     func configure(with viewController: ViewController) {
+        let service = ImageService()
         let presenter = ImagePresenter(view: viewController)
-        let interactor = ImageInteractor(presenter: presenter)
+        let interactor = ImageInteractor(presenter: presenter, service: service)
         
         viewController.imagePresenter = presenter
         presenter.interactor = interactor

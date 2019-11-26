@@ -15,7 +15,20 @@
 		E47F2C49236AFE20001D3538 /* ImageConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47F2C48236AFE20001D3538 /* ImageConfigurator.swift */; };
 		E47F2C4B236AFF95001D3538 /* ImageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47F2C4A236AFF95001D3538 /* ImageInteractor.swift */; };
 		E47F2C4D236B017C001D3538 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47F2C4C236B017C001D3538 /* ImageService.swift */; };
+		E4E7343A238D5F1C0073E0F2 /* ViperHomeWorkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E73439238D5F1C0073E0F2 /* ViperHomeWorkTests.swift */; };
+		E4E73441238D5FAB0073E0F2 /* ImageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47F2C4A236AFF95001D3538 /* ImageInteractor.swift */; };
+		E4E73442238D5FCF0073E0F2 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47F2C4C236B017C001D3538 /* ImageService.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4E7343C238D5F1C0073E0F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E47F2C29236AF279001D3538 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E47F2C30236AF279001D3538;
+			remoteInfo = ViperHomeWork;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		E47F2C31236AF279001D3538 /* ViperHomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperHomeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,10 +41,20 @@
 		E47F2C48236AFE20001D3538 /* ImageConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageConfigurator.swift; sourceTree = "<group>"; };
 		E47F2C4A236AFF95001D3538 /* ImageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInteractor.swift; sourceTree = "<group>"; };
 		E47F2C4C236B017C001D3538 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		E4E73437238D5F1C0073E0F2 /* ViperHomeWorkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperHomeWorkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4E73439238D5F1C0073E0F2 /* ViperHomeWorkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperHomeWorkTests.swift; sourceTree = "<group>"; };
+		E4E7343B238D5F1C0073E0F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E47F2C2E236AF279001D3538 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4E73434238D5F1C0073E0F2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				E47F2C33236AF279001D3538 /* ViperHomeWork */,
+				E4E73438238D5F1C0073E0F2 /* ViperHomeWorkTests */,
 				E47F2C32236AF279001D3538 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				E47F2C31236AF279001D3538 /* ViperHomeWork.app */,
+				E4E73437238D5F1C0073E0F2 /* ViperHomeWorkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,6 +96,15 @@
 				E47F2C40236AF27D001D3538 /* Info.plist */,
 			);
 			path = ViperHomeWork;
+			sourceTree = "<group>";
+		};
+		E4E73438238D5F1C0073E0F2 /* ViperHomeWorkTests */ = {
+			isa = PBXGroup;
+			children = (
+				E4E73439238D5F1C0073E0F2 /* ViperHomeWorkTests.swift */,
+				E4E7343B238D5F1C0073E0F2 /* Info.plist */,
+			);
+			path = ViperHomeWorkTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +127,24 @@
 			productReference = E47F2C31236AF279001D3538 /* ViperHomeWork.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E4E73436238D5F1C0073E0F2 /* ViperHomeWorkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4E73440238D5F1C0073E0F2 /* Build configuration list for PBXNativeTarget "ViperHomeWorkTests" */;
+			buildPhases = (
+				E4E73433238D5F1C0073E0F2 /* Sources */,
+				E4E73434238D5F1C0073E0F2 /* Frameworks */,
+				E4E73435238D5F1C0073E0F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4E7343D238D5F1C0073E0F2 /* PBXTargetDependency */,
+			);
+			name = ViperHomeWorkTests;
+			productName = ViperHomeWorkTests;
+			productReference = E4E73437238D5F1C0073E0F2 /* ViperHomeWorkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -104,6 +156,9 @@
 				ORGANIZATIONNAME = "Emil Shalaumov";
 				TargetAttributes = {
 					E47F2C30236AF279001D3538 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					E4E73436238D5F1C0073E0F2 = {
 						CreatedOnToolsVersion = 10.3;
 					};
 				};
@@ -122,6 +177,7 @@
 			projectRoot = "";
 			targets = (
 				E47F2C30236AF279001D3538 /* ViperHomeWork */,
+				E4E73436238D5F1C0073E0F2 /* ViperHomeWorkTests */,
 			);
 		};
 /* End PBXProject section */
@@ -133,6 +189,13 @@
 			files = (
 				E47F2C3F236AF27D001D3538 /* LaunchScreen.storyboard in Resources */,
 				E47F2C3C236AF27D001D3538 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4E73435238D5F1C0073E0F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +215,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E4E73433238D5F1C0073E0F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4E73441238D5FAB0073E0F2 /* ImageInteractor.swift in Sources */,
+				E4E7343A238D5F1C0073E0F2 /* ViperHomeWorkTests.swift in Sources */,
+				E4E73442238D5FCF0073E0F2 /* ImageService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4E7343D238D5F1C0073E0F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E47F2C30236AF279001D3538 /* ViperHomeWork */;
+			targetProxy = E4E7343C238D5F1C0073E0F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E47F2C3D236AF27D001D3538 /* LaunchScreen.storyboard */ = {
@@ -318,6 +399,42 @@
 			};
 			name = Release;
 		};
+		E4E7343E238D5F1C0073E0F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LY3CG77MY2;
+				INFOPLIST_FILE = ViperHomeWorkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = EShalaumov.ViperHomeWorkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E4E7343F238D5F1C0073E0F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LY3CG77MY2;
+				INFOPLIST_FILE = ViperHomeWorkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = EShalaumov.ViperHomeWorkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -335,6 +452,15 @@
 			buildConfigurations = (
 				E47F2C44236AF27D001D3538 /* Debug */,
 				E47F2C45236AF27D001D3538 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4E73440238D5F1C0073E0F2 /* Build configuration list for PBXNativeTarget "ViperHomeWorkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4E7343E238D5F1C0073E0F2 /* Debug */,
+				E4E7343F238D5F1C0073E0F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

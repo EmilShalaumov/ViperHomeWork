@@ -21,14 +21,15 @@ protocol ImageInteractorInput {
 
 class ImageInteractor: ImageInteractorInput {
     var presenter: ImageInteractorOutput
-    let service = ImageService()
+    var service: ImageServiceProtocol
     
-    init(presenter: ImageInteractorOutput) {
+    init(presenter: ImageInteractorOutput, service: ImageServiceProtocol) {
         self.presenter = presenter
+        self.service = service
     }
     
     func showImageFromCache() {
-        if let image = service.getImageFromCache() {
+        if let image = service.imageCache {
             presenter.updateImage(image: image)
             return
         }
@@ -38,7 +39,7 @@ class ImageInteractor: ImageInteractorInput {
     func downloadImage() {
         service.downloadImage { image, error in
             if let image = image {
-                self.service.saveImageToCache(image: image)
+                self.service.imageCache = image
                 DispatchQueue.main.async {
                     self.presenter.showAlertController(title: "Success", message: "Image downloaded")
                 }
@@ -51,7 +52,7 @@ class ImageInteractor: ImageInteractorInput {
     }
     
     func clearCache() {
-        service.clearImageCache()
+        service.imageCache = nil
         presenter.updateImage(image: UIImage())
         presenter.showAlertController(title: "Success", message: "Cache is cleared")
     }
